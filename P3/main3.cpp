@@ -13,15 +13,15 @@ using namespace std;
   double getHvalue(double H);
   double getQvalue(double Q);
   double powerGen(double H, double Q);
-
-int main() {
-
   // Initialize variables
   double H; // The distance the water falls in meter.
   double Q; // The volume flow rate in m^3/s.
   double P;
   const double p = 997; // The density of water in kg/m^3.
   const double g = 9.81; // The acceleration due to gravity in m/s^2
+
+int main() {
+
 
   // Prompt user to get inputs
   H = getHvalue(H);
@@ -43,7 +43,7 @@ int main() {
     return Q;
   }
   double powerGen(double H, double Q){
-    P = p * q * H * g;
+    P = p * Q * H * g;
     cout << "The power generated in watts is " << P << endl;
     return P;
   }

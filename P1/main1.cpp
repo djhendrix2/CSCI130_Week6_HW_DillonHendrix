@@ -101,7 +101,7 @@ int main() {
   srand(time(NULL)); // initialize random seed.
   randCelebratory = rand() % 5;
 
-  /* switch (randCelebratory) {
+  switch (randCelebratory) {
 
   case 0:
     cout << "You win! Nice work!" << endl;
@@ -127,7 +127,7 @@ int main() {
   }
 
   return randCelebratoryChar;
-} */
+}
 
 /////////////// User-Created Functions ////////////////////////////////////////
 
