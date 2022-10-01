@@ -19,11 +19,13 @@ int main() {
   int day;
   int t; // number of times to take and astology
   int t_min; // min number of times to take and astrology
+  int userTinput(int t);
 
   // Prompt user for times (t) wanted astrology taken
   //cout << "Input times wanted astology taken (t): ";
-  cin >> t;
-  cout << endl;
+  //cin >> t;
+  //cout << endl;
+  t = userTinput(t);
 
   // Loop to run outcomes of month and day to determine astology sign
   for(t_min = 1; t_min <= t; t_min = t_min + 1){
@@ -66,13 +68,15 @@ int main() {
     else if ((month == "Feb" && day >= 20)||(month == "Mar" && day <= 20)){
       cout << "Pisces \n" << endl;
     }
-    
   }
+  //else
+  // cout << "Incorrect user input. Try again." << endl;
+  
   return 0;
 }
 
-/* char userMonthInput(char month){
-  cout << "Input user month of birth: ";
-  cin >> month;
-  return month; */
-//}
+  int userTinput(int t){
+  cout << " ";
+  cin >> t;
+  return t; 
+  }
